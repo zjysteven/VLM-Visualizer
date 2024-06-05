@@ -1,0 +1,14 @@
+accelerate>=0.25.0
+draccus @ git+https://github.com/dlwh/draccus
+einops
+huggingface_hub
+jsonlines
+rich
+sentencepiece
+timm==0.9.10
+transformers>=4.38.1
+opencv-python
+ipykernel
+seaborn
+matplotlib
+protobuf
