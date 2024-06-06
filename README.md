@@ -6,14 +6,14 @@
 - *Note* that this project is a work in progress and many design choices are open to debate. It may not be the most rigorous implementation. Also, it currently only supports [LLaVA](https://github.com/haotian-liu/LLaVA) models (specifically the v1.5 versions; v1.6 and the latest Next series need extra adaptations). I can definitely consider extending it to other models if there is interest. *If you have any ideas or thoughts, feel free to open a discussion [here](https://github.com/zjysteven/VLMVisualizer/discussions)*.
 
 
-- Browse the example jupyter notebook [llava_example.ipynb](llava.ipynb) to try yourself.
+- Browse the example jupyter notebook [llava_example.ipynb](llava_example.ipynb) to try yourself.
 
 ## Examples
 ### Example 1
 This is kind of a naive example but can serve as a proof of concept. The image is an input from [MMBench](https://github.com/open-compass/MMBench/blob/main/samples/MMBench/1.jpg).
 ![example_1_data](assets/example_1_data.png)
 
-With the steps in [llava_example.ipynb](llava.ipynb), we can first see how much attention the model pays to the image when generating each token.
+With the steps in [llava_example.ipynb](llava_example.ipynb), we can first see how much attention the model pays to the image when generating each token.
 ![example_1_attn_over_vis_tokens](assets/example_1_attn_over_vis_tokens.png)
 
 For example, when generating the `apple` token in `print("apple")`, around 45% of the attention is on the vision tokens, which makes sense as the model needs to read "apple" from the image. It also makes sense that compared to other tokens, the model pays more attention to vision tokens when generating the three words (apple, banana, cherry; see the three peaks in the above plot).
