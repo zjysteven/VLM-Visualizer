@@ -9,7 +9,6 @@
 - Browse the example jupyter notebook [llava_example.ipynb](llava_example.ipynb) to try yourself.
 
 ## Examples
-### Example 1
 This is kind of a naive example but can serve as a proof of concept. The image is an input from [MMBench](https://github.com/open-compass/MMBench/blob/main/samples/MMBench/1.jpg).
 ![example_1_data](assets/example_1_data.png)
 
@@ -22,13 +21,8 @@ For example, when generating the `apple` token in `print("apple")`, around 45% o
 Then we can further connect with the vision encoder, i.e. using ViT's attention, to show the attention map over the input image.
 ![example_1_attn_over_image](assets/example_1_attn_over_image.png)
 
-The figure shows the image overlayed with the attention map when generating the five tokens. Although there seems to be some random areas that the model pays attention to all the time, we can see that when generating `apple` the model does seem to focus more on the "apple" in the image.
+The figure shows the image overlayed with the attention map when generating those tokens. Although there seems to be some random areas that the model pays attention to all the time, we can see that when generating `apple`/`banana`/`cherry` the model does seem to focus more on the "apple"/"banana"/"cherry" in the image.
 
-
-### Example 2
-![example_2_attn_over_image](assets/example_2_attn_over_image.png)
-
-For this image we ask the model "What is the boy doing?" When the model says he is "holding an umbrella", we can see that the model focuses on the umbrella in the image. When the model says he is "feeding a cow", you can see that it attends to the boy's hand and the cow's head when generating the `feed` token.
 
 ## Installation
 Install a compatible version of torch and torchvision. Then install dependencies with `pip install -r requirements.txt`.
