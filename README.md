@@ -31,3 +31,6 @@ Install a compatible version of torch and torchvision. Then install dependencies
 [LLaVA](https://github.com/haotian-liu/LLaVA): The official implementation of the LLaVA model.
 
 [attention](https://github.com/mattneary/attention): Attention aggregation for LLMs is heavily borrowed from this repo.
+
+## Related projects
+[lmms-finetune](https://github.com/zjysteven/lmms-finetune): A unified and simple codebase for finetuning large vision language models including LLaVA-1.5/1.6/NeXT-Interleave/NeXT-Video/OneVision, Qwen(-2)-VL, Phi3-V.
